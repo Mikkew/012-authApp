@@ -29,9 +29,6 @@ export class AuthService {
 
           if(resp.ok){
 
-            console.log(resp);
-            
-            
             localStorage.setItem('token', resp.token!);
             
             this._usuario = {
@@ -41,9 +38,6 @@ export class AuthService {
               lastName: resp.lastName!,
               email: resp.email!, 
             }
-            
-            console.log(this._usuario);
-
   
           }
           
